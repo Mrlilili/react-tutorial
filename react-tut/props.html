@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>组建的状态state</title>
+</head>
+<body>
+<div id="app"></div>
+<script src="bower_components/react/react.js"></script>
+<script src="bower_components/react/JSXTransformer.js"></script>
+<script type="text/jsx">
+
+  var Submessage = React.createClass({
+    propTypes: {
+      messages: React.PropTypes.array.isRequired
+    },
+    getDefaultProps: function () {
+      return {
+        messages: ['默认的子消息'],
+      }
+    },
+
+    render: function () {
+      var msgs = [];
+      this.props.messages.forEach(function (msg, index) {
+        msgs.push(
+          <p>码农说:{msg}</p>
+        );
+      });
+      return (
+        <div>
+          {msgs}
+        </div>
+
+      )
+    }
+  });
+  var MessageBox = React.createClass({
+
+    getInitialState: function () {
+      return {
+        isVisible: true,
+
+        subMessages: ['我会带吗搬砖', '以及花式搬砖', '不说了,工头叫我回去搬砖了....']
+
+
+      }
+    },
+    render: function () {
+      var styleObj = {
+        display: this.state.isVisible ? 'block' : 'none'
+      };
+      return (
+        <div>
+          <h1 style={styleObj}>{this.props.title}</h1>
+          <Submessage messages={this.state.subMessages}/>
+        </div>
+
+      )
+    }
+  });
+
+  var title = '你好世界(来自props的哦)';
+  var msgBox = React.render(<MessageBox title={title}/>, document.getElementById('app'));
+</script>
+</body>
+</html>
