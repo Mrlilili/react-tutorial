@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>组建的状态state</title>
+</head>
+<body>
+<div id="app"></div>
+<script src="bower_components/react/react-with-addons.js"></script>
+<script src="bower_components/react/JSXTransformer.js"></script>
+
+<script type="text/jsx">
+  var Submessage = React.createClass({
+    componentWillReceiveProps:function(nextProp){
+      console.log('子组件即将获得props');
+      if(nextProp.count>5)this.props.count = 5;
+    },
+    shouldComponentUpdate:function(nextProp){
+      if(nextProp.count>5) return false;
+      return true;
+    },
+    render:function(){
+      return (
+        <h3>当前计数:{this.props.count}</h3>
+      )
+    }
+  });
+ var MessageBox = React.createClass({
+   getInitialState:function(){
+     return {
+       count:0
+     }
+   },
+   getDefaultProps:function(){
+
+   },
+//   componentWillMount:function(){
+//   },
+//   componentDidMount:function(){
+//
+//   },
+//   componentWillUnmount:function(){
+//
+//   },
+   shouldComponentUpdate:function(nextProp,nextState){
+     console.log('shouldComponentUpdate');
+
+//     if(nextState.count>3){return false}
+     return true;
+   },
+   componentWillUpdate:function(nextProp,nextState){
+     console.log('componentWillUpdate');
+
+   },
+   componentDidUpdate:function(){
+     console.log('componentDidUpdate');
+   },
+   doUpdate:function(){
+     this.setState({
+       count:this.state.count+1
+     })
+   },
+   killMySelf:function(){
+     React.unmountComponentAtNode(document.getElementById('app'));
+   },
+   render:function(){
+
+     return (
+       <div>
+         <h1>计数:{this.state.count}</h1>
+         <button onClick = {this.killMySelf}>卸载掉这个组件</button>
+         <button onClick={this.doUpdate}>手动更新一下</button>
+         <Submessage count={this.state.count} />
+       </div>
+     )
+   }
+ });
+  React.render(<MessageBox />, document.getElementById('app'));
+</script>
+</body>
+</html>

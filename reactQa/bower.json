@@ -1,0 +1,21 @@
+{
+  "name": "reactqa",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Aaron <15360085185>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Mrlilili/react-tutorial",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
