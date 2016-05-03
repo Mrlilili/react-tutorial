@@ -1,0 +1,11 @@
+.topmid-component {
+  position: absolute;
+  left: 50%;
+  height: 60px;
+  left: 50%;
+  margin-left: -20px;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}

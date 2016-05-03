@@ -12,6 +12,7 @@ module.exports = React.createClass({
     this.props.onNewQuestion(newQuestion);
   },
   render: function () {
+    console.log(this);
     var styleObj = {
       display: this.props.formDisplayed ? 'block' : 'none'
     };
