@@ -17,9 +17,12 @@ class AppComponent extends React.Component {
       formDisplayed: !this.state.formDisplayed
     });
   }
+<<<<<<< HEAD
   componentDidMount() {
     console.log(this.refs.test);
   }
+=======
+>>>>>>> a43bd1edee92fde9f3a777ebe847787b0e93fd66
 
   render() {
     return (
@@ -27,7 +30,11 @@ class AppComponent extends React.Component {
         <div className="jumbotron text-center">
           <div className="container">
             <h1>React问答</h1>
+<<<<<<< HEAD
             <ShowAddButton ref = "test" onToggleForm={this.onToggleForm.bind(this)}/>
+=======
+            <ShowAddButton onToggleForm={this.onToggleForm.bind(this)}/>
+>>>>>>> a43bd1edee92fde9f3a777ebe847787b0e93fd66
           </div>
         </div>
         <div className="main container">
