@@ -1,10 +1,7 @@
 'use strict';
 
 import React from 'react';
-<<<<<<< HEAD
 import { findDOMNode } from 'react-dom';
-=======
->>>>>>> a43bd1edee92fde9f3a777ebe847787b0e93fd66
 
 require('styles//QuestionForm.scss');
 
