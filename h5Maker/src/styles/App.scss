@@ -1,4 +1,8 @@
 @import "lib/_base.scss";
+html,body{
+  height: 100%;
+  overflow: hidden;
+}
 .app-component {
 
 }
