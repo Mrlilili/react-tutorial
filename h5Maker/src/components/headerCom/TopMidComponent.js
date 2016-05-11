@@ -8,7 +8,15 @@ class TopMidComponent extends React.Component {
   render() {
     return (
       <div className="topmid-component">
-        topmid
+        <ul>
+          <li>文本</li>
+          <li>图片</li>
+          <li>形状</li>
+          <li>视频</li>
+          <li>表单</li>
+          <li>按钮</li>
+          <li>更多</li>
+        </ul>
       </div>
     );
   }

@@ -8,7 +8,12 @@ class TopLefComponent extends React.Component {
   render() {
     return (
       <div className="toplef-component">
-       topLeft
+        <a href=""></a>
+        <ul>
+          <li>撤销</li>
+          <li>重做</li>
+          <li>添加标尺</li>
+        </ul>
       </div>
     );
   }

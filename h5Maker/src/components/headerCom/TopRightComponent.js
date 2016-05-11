@@ -8,7 +8,16 @@ class TopRightComponent extends React.Component {
   render() {
     return (
       <div className="topright-component">
-        topRigt
+        <ul>
+          <li>选择音乐</li>
+        </ul>
+        <ul>
+          <li>设置</li>
+          <li>保存</li>
+          <li>预览</li>
+          <li>发布</li>
+          <li>功能</li>
+        </ul>
       </div>
     );
   }

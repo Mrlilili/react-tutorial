@@ -1,3 +1,26 @@
 .toplef-component {
   float: left;
+  a {
+    background-image: url(http://ued.yypm.com/292x113);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    float: left;
+    font-size: 0;
+    height: 57px;
+    margin: 2px 20px;
+    width: 146px;
+  }
+  ul {
+    list-style: none;
+
+    padding: 0;
+    float: left;
+    margin-top: 16px;
+    li {
+      float: left;
+      margin-left: 3px;
+      position: relative;
+    }
+  }
 }

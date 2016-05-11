@@ -1,4 +1,11 @@
 .topright-component {
+  height: 60px;
   float: right;
-
+  ul{
+    list-style: none;
+    float: left;
+    li{
+      float: left;
+    }
+  }
 }
