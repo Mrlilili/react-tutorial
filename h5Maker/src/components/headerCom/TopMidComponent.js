@@ -8,14 +8,14 @@ class TopMidComponent extends React.Component {
   render() {
     return (
       <div className="topmid-component">
-        <ul>
-          <li>文本</li>
-          <li>图片</li>
-          <li>形状</li>
-          <li>视频</li>
-          <li>表单</li>
-          <li>按钮</li>
-          <li>更多</li>
+        <ul className="plugin-btns">
+          <li><div>文本</div></li>
+          <li><div>图片</div></li>
+          <li><div>形状</div></li>
+          <li><div>视频</div></li>
+          <li><div>表单</div></li>
+          <li><div>按钮</div></li>
+          <li><div>更多</div></li>
         </ul>
       </div>
     );

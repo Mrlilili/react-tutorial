@@ -9,10 +9,18 @@
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   ul {
+
     overflow: hidden;
-    list-style: none;
+
     li {
-      float: left;
+
+      margin-left: 10px;
+
+      div {
+
+        height: 60px;
+        width: 60px;
+      }
     }
   }
 }

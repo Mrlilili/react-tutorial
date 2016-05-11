@@ -1,8 +1,34 @@
-.header-component{
-  background-image: linear-gradient(top,#666,#444);
+.header-component {
+  background-image: linear-gradient(top, #666, #444);
   height: 60px;
   min-width: 1155px;
   position: relative;
   width: 100%;
   z-index: 100;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+    li {
+      float: left;
+      cursor: pointer;
+    }
+    &.plugin-btns {
+      li {
+
+        height: 60px;
+        width: 60px;
+        &:hover {
+          cursor: pointer;
+          background-image: linear-gradient(top, #858585, #515151);
+        }
+      }
+    }
+    &.global-setting {
+      li {
+        width: 42px;
+      }
+    }
+  }
 }

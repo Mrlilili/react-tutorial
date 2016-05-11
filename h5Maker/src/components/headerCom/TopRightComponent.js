@@ -11,7 +11,7 @@ class TopRightComponent extends React.Component {
         <ul>
           <li>选择音乐</li>
         </ul>
-        <ul>
+        <ul className="plugin-btns global-setting">
           <li>设置</li>
           <li>保存</li>
           <li>预览</li>
