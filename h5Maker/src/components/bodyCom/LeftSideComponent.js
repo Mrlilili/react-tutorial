@@ -8,7 +8,7 @@ class LeftSideComponent extends React.Component {
   render() {
     return (
       <div className="leftside-component">
-        this is leftside
+        this is leftside123
       </div>
     );
   }
