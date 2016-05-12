@@ -1,8 +1,15 @@
 @import "lib/_base.scss";
-html,body{
+
+html, body {
   height: 100%;
   overflow: hidden;
+  font: 14px/1.5 "Microsoft YaHei", "宋体", arial, Helvetica, sans-serif;
 }
-.app-component {
 
+#app {
+  height: 100%;
+}
+
+.app-component {
+  height: 100%;
 }

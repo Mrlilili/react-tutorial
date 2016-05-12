@@ -1,9 +1,13 @@
 .body-component {
   width: 100%;
-  top:60px;
+  top: 60px;
   bottom: 0;
   overflow: hidden;
   clear: both;
   position: absolute;
-
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 }

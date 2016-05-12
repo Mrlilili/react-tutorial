@@ -6,6 +6,7 @@ require('styles/headerCom/TopLef.scss');
 
 class TopLefComponent extends React.Component {
   render() {
+
     return (
       <div className="toplef-component">
         <a href=""></a>

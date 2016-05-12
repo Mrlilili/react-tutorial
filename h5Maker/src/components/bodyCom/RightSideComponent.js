@@ -8,7 +8,10 @@ class RightSideComponent extends React.Component {
   render() {
     return (
       <div className="rightside-component">
-        this is rightside
+        <ul className="tab-nav">
+          <li>页面背景</li>
+          <li className="active">功能</li>
+        </ul>
       </div>
     );
   }

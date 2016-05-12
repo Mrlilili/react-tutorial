@@ -3,4 +3,30 @@
   height: 100%;
   float: left;
   background: #4B4B4B;
+  .tab-nav {
+    display: block;
+    background-color:#383838;
+    overflow: hidden;
+    li {
+      &:first-child{
+        border-right:solid 1px #1A1A1A;
+      }
+      box-sizing: border-box;
+      width: 50%;
+      height: 34px;
+      float: left;
+      border-top: solid 1px #757575;
+      line-height: 34px;
+      color: #fff;
+      text-align: center;
+      font-size: 12px;
+      opacity: 0.5;
+      cursor: pointer;
+      &.sub-nav-active{
+        background-color: #595959 !important;
+        border-bottom: 0;
+        opacity: 1;
+      }
+    }
+  }
 }
