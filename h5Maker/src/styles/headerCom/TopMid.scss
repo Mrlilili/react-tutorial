@@ -9,17 +9,46 @@
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   ul {
-
     overflow: hidden;
-
     li {
-
       margin-left: 10px;
 
       div {
-
         height: 60px;
         width: 60px;
+        text-align: center;
+        i {
+          display: block;
+          height: 28px;;
+          width: 28px;
+          margin: 6px auto auto;
+          &.text {
+            background: url("../../images/icon_font.png") no-repeat center center;
+          }
+          &.pic {
+            background: url("../../images/icon_pic.png") no-repeat center center;
+          }
+          &.shape {
+            background: url("../../images/icon_shape.png") no-repeat center center;
+          }
+          &.video {
+            background: url("../../images/icon_video.png") no-repeat center center;
+          }
+          &.form {
+            background: url("../../images/icon_form.png") no-repeat center center;
+          }
+          &.btn {
+            background: url("../../images/icon_btn.png") no-repeat center center;
+          }
+          &.more {
+            background: url("../../images/icon_more.png") no-repeat center center;
+          }
+        }
+        span {
+          font-size: 12px;
+          color: #fff;
+          text-align: center;
+        }
       }
     }
   }
