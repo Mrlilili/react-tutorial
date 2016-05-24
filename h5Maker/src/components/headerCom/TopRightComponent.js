@@ -9,14 +9,14 @@ class TopRightComponent extends React.Component {
     return (
       <div className="topright-component">
         <ul>
-          <li>选择音乐</li>
+          <li className="music-set-wrapper"><i></i><span>请设置背景音乐</span></li>
         </ul>
         <ul className="plugin-btns global-setting">
-          <li>设置</li>
-          <li>保存</li>
-          <li>预览</li>
-          <li>发布</li>
-          <li>功能</li>
+          <li><i className="set-up"></i><span>设置</span></li>
+          <li><i className="save"></i><span>保存</span></li>
+          <li><i className="preview"></i><span>预览</span></li>
+          <li><i className="release"></i><span>发布</span></li>
+          <li><i className="fuc"></i><span>功能</span></li>
         </ul>
       </div>
     );

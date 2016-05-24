@@ -10,39 +10,36 @@ class TopMidComponent extends React.Component {
       <div className="topmid-component">
         <ul className="plugin-btns">
           <li>
-            <div><i className="text"></i>
-              <span>文本</span>
-            </div>
+            <i className="text"></i>
+            <span>文本</span>
           </li>
           <li>
-            <div><i className="pic"></i>
-              <span>图片</span>
-            </div>
+            <i className="pic"></i>
+            <span>图片</span>
           </li>
           <li>
-            <div><i className="shape"></i>
-              <span>形状</span>
-            </div>
+            <i className="shape"></i>
+            <span>形状</span>
           </li>
           <li>
-            <div><i className="video"></i>
-              <span>视频</span>
-            </div>
+            <i className="video"></i>
+            <span>视频</span>
+
           </li>
           <li>
-            <div><i className="form"></i>
-              <span>表单</span>
-            </div>
+            <i className="form"></i>
+            <span>表单</span>
+
           </li>
           <li>
-            <div><i className="btn"></i>
-              <span>按钮</span>
-            </div>
+            <i className="btn"></i>
+            <span>按钮</span>
+
           </li>
           <li>
-            <div><i className="more"></i>
-              <span>更多</span>
-            </div>
+            <i className="more"></i>
+            <span>更多</span>
+
           </li>
         </ul>
       </div>

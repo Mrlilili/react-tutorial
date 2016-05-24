@@ -15,10 +15,12 @@
       cursor: pointer;
     }
     &.plugin-btns {
+
       li {
 
         height: 60px;
         width: 60px;
+
         &:hover {
           cursor: pointer;
           background-image: linear-gradient(top, #858585, #515151);
